@@ -1,0 +1,11 @@
+{
+  "name": "sportlife.v2.0-react",
+  "version": "1.0.0",
+  "description": "React version of mine website, SportLife",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Ciejka",
+  "license": "ISC"
+}
