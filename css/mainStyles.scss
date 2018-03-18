@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton');
+
+$maxMargin: 10px;
+$maxxMargin: 30px;
+$maxxxMargin: 70px;
+$maxxxxMargin: 50px;
+$maxxxxxMargin: 120px;
+
+@mixin borderRadius($radius){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+}
+
+@mixin specifiedBorderRadius($radius){
+  border-bottom-right-radius: 0;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+body{
+  width: 100%;
+  height:100%;
+  background-size: cover;
+  background: url(../image/background0.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  @media screen and (max-width: 400px){
+    padding: 0 0;
+  }
+  @media screen and (min-width: 400px) and (max-width: 768px){
+    padding: 0 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    padding: 0 0;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1100px){
+    padding: 0 0;
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1200px){
+    padding: 0 0;
+  }
+  @media screen and (min-width: 1200px){
+    padding: 0 0;
+  }
+  .content{
+      margin-top: 100px;
+    .navbar-mineContainer{
+      z-index: 1000;
+      position:fixed;
+      width:100%;
+      top:0;
+      .navbar-mine{
+        z-index: 1001;
+        @media screen and (max-width: 400px){
+          margin: 0 $maxMargin;
+        }
+        @media screen and (min-width: 400px) and (max-width: 768px){
+          margin: 0 $maxxMargin;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+          margin: 0 $maxxxMargin;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+          margin: 0 $maxxxxMargin;
+        }
+        @media screen and (min-width: 1200px){
+          margin: 0 $maxxxxxMargin;
+        }
+        .animate-height{
+          height: 100px;
+        }
+        .unanimate-height{
+          height: 50px;
+        }
+        .slide-button{
+          position: absolute;
+          right:10px;
+          top:0;
+          z-index:1001;
+          @include borderRadius(100px);
+          background: white;
+          width:30px;
+          height:30px;
+          cursor: pointer;
+          span{
+            position: relative;
+            font-size:21px;
+            left: calc(50% - 11px);
+            top: calc(50% - 11px);
+            cursor: pointer;
+            &:hover{
+              color:white;
+            }
+          }
+          &:hover{
+            background: black;
+          }
+
+        }
+        .branda{
+          width:600px;
+          height:40px;
+          font-size:20px;
+          color:white;
+          font-weight: bold;
+          font-family: 'Monoton', cursive;
+          padding:0;
+          margin:0;
+          letter-spacing:15px;
+          position: absolute;
+          text-align: center;
+          left: calc(50% - 300px);
+          top: 0;
+        }
+
+        .logo{
+          @media screen and (max-width: 400px){
+            display:none !important;
+          }
+          @media screen and (min-width: 400px) and (max-width: 768px){
+            display: none !important;
+          }
+          @media screen and (min-width: 768px) and (max-width: 992px){
+            display: none !important;
+          }
+          @media screen and (min-width: 992px) and (max-width: 1100px){
+            display: none !important;
+          }
+          @media screen and (min-width: 1100px) and (max-width: 1200px){
+            display: none !important;
+          }
+          @media screen and (min-width: 1200px){
+            padding: 0 0;
+          }
+          position: absolute;
+          left:20px;
+          display: none;
+        }
+        height: 50px;
+        background: rgba(100,100,100,0.5);
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px;
+        .nav-links{
+          font-family: 'Audiowide', cursive;
+          margin-top:30px;
+          display:none;
+
+        }
+        ul{
+          li{
+            @include borderRadius(20px);
+            border: 3px solid white;
+            a{
+              color:white;
+              text-transform: none;
+              @media screen and (max-width: 400px){
+                letter-spacing:1px;
+              }
+              @media screen and (min-width: 400px) and (max-width: 768px){
+                letter-spacing:2px;
+              }
+              @media screen and (min-width: 768px) and (max-width: 992px){
+                letter-spacing:3px;
+              }
+              @media screen and (min-width: 992px) and (max-width: 1100px){
+                letter-spacing:4px;
+              }
+              @media screen and (min-width: 1100px) and (max-width: 1200px){
+                letter-spacing:5px;
+              }
+              @media screen and (min-width: 1200px){
+                letter-spacing:6px;
+              }
+
+              &:hover{
+                border-radius:30px;
+                background: rgba(250,250,250,0.3);
+              }
+              &:active{
+                border-radius:30px;
+                background: rgba(250,250,250,0.3);
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+    .main-content{
+      margin: 20px;
+      padding: 20px;
+      background: white;
+      z-index: 500;
+      @include specifiedBorderRadius(30px);
+      @media screen and (max-width: 400px){
+        margin: 0 $maxMargin;
+      }
+      @media screen and (min-width: 400px) and (max-width: 768px){
+        margin: 0 $maxxMargin;
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px){
+        margin: 0 $maxxxMargin;
+      }
+      @media screen and (min-width: 992px) and (max-width: 1200px){
+        margin: 0 $maxxxxMargin;
+      }
+      @media screen and (min-width: 1200px){
+        margin: 0 $maxxxxxMargin;
+      }
+
+      .home{
+      }
+
+      .creator{
+        .heading-td{
+          background: rgba(70,70,70,1);
+          color:white;
+        }
+        #btn_prepare{
+          display:none;
+        }
+        .btns-grup{
+          padding: 20px;
+        }
+        .table-view{
+          table{
+          }
+          .myAddButton {
+            @include borderRadius(100px);
+            background: red;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px 10px;
+            &:hover{
+              background: black;
+              cursor: pointer;
+              -webkit-transition: all 1s;
+              -moz-transition: all 1s;
+              -ms-transition: all 1s;
+              -o-transition: all 1s;
+              transition: all 1s;
+            }
+          }
+        }
+      }
+      .meals{
+        @media screen and (max-width: 400px){
+          margin: 0 $maxMargin;
+        }
+        @media screen and (min-width: 400px) and (max-width: 768px){
+          margin: 0 $maxxMargin;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+          margin: 0 $maxxxMargin;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+          margin: 0 $maxxxxMargin;
+        }
+        @media screen and (min-width: 1200px){
+          margin: 0 $maxxxxxMargin;
+        }
+        padding: 40px;
+        background: rgba(250,250,250,0.7);
+        @include specifiedBorderRadius(30px);
+        .meal_panel{
+          margin-bottom: 10px;
+          padding: 20px;
+          border: 3px solid black;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          background: rgba(250,250,250,0.7);
+          .meal_panel_heading{
+            text-align: center;
+            border: 4px double rgba(100,90,130,0.6);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+          }
+          .meal_panel_body{
+            padding: 20px;
+            background: rgba(200,180,10,0.9);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+          }
+        }
+      }
+
+      .product_base{
+        @media screen and (max-width: 400px){
+          margin: 0 $maxMargin;
+        }
+        @media screen and (min-width: 400px) and (max-width: 768px){
+          margin: 0 $maxxMargin;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+          margin: 0 $maxxxMargin;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+          margin: 0 $maxxxxMargin;
+        }
+        @media screen and (min-width: 1200px){
+          margin: 0 $maxxxxxMargin;
+        }
+        background: rgba(250,250,250,0.7);
+        @include specifiedBorderRadius(30px);
+      }
+    }
+    .footerContainer{
+
+      padding:0;
+      .footer{
+        position: fixed;
+        bottom:0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        height: 50px;
+        background: rgba(100,100,100,0.8);
+        .copyright{
+          font-size:15px;
+          color:white;
+          font-weight: bold;
+          font-family: 'Monoton', cursive;
+          padding:0;
+          margin:0;
+          letter-spacing:10px;
+        }
+        @media screen and (max-width: 400px){
+          margin: 0 $maxMargin;
+          width: calc(100% - 20px);
+        }
+        @media screen and (min-width: 400px) and (max-width: 768px){
+          margin: 0 $maxxMargin;
+          width: calc(100% - 60px);
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px){
+          margin: 0 $maxxxMargin;
+          width: calc(100% - 140px);
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+          margin: 0 $maxxxxMargin;
+          width: calc(100% - 100px);
+        }
+        @media screen and (min-width: 1200px){
+          margin: 0 $maxxxxxMargin;
+          width: calc(100% - 240px);
+        }
+      }
+    }
+    .error{
+      color: red;
+      font-size: 25px;
+    }
+  }
+}
+
+.animate-arrow{
+  transform: rotate(180deg);
+  transition: all 2s;
+}
+
+.unanimate-arrow{
+  transform: rotate(0);
+  transition: all 2s;
+}
+
+
+table{
+  thead{
+    tr{
+      td{
+        background: rgba(100,100,100,0.8);
+        color:white;
+      }
+    }
+  }
+  tr{
+    td{
+      font-family: 'Audiowide', cursive;
+    }
+  }
+}

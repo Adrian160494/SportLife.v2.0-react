@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Monoton");
+body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: url(../image/background0.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+  @media screen and (max-width: 400px) {
+    body {
+      padding: 0 0; } }
+  @media screen and (min-width: 400px) and (max-width: 768px) {
+    body {
+      padding: 0 0; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+      padding: 0 0; } }
+  @media screen and (min-width: 992px) and (max-width: 1100px) {
+    body {
+      padding: 0 0; } }
+  @media screen and (min-width: 1100px) and (max-width: 1200px) {
+    body {
+      padding: 0 0; } }
+  @media screen and (min-width: 1200px) {
+    body {
+      padding: 0 0; } }
+  body .content {
+    margin-top: 100px; }
+    body .content .navbar-mineContainer {
+      z-index: 1000;
+      position: fixed;
+      width: 100%;
+      top: 0; }
+      body .content .navbar-mineContainer .navbar-mine {
+        z-index: 1001;
+        height: 50px;
+        background: rgba(100, 100, 100, 0.5);
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px; }
+        @media screen and (max-width: 400px) {
+          body .content .navbar-mineContainer .navbar-mine {
+            margin: 0 10px; } }
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+          body .content .navbar-mineContainer .navbar-mine {
+            margin: 0 30px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .navbar-mineContainer .navbar-mine {
+            margin: 0 70px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body .content .navbar-mineContainer .navbar-mine {
+            margin: 0 50px; } }
+        @media screen and (min-width: 1200px) {
+          body .content .navbar-mineContainer .navbar-mine {
+            margin: 0 120px; } }
+        body .content .navbar-mineContainer .navbar-mine .animate-height {
+          height: 100px; }
+        body .content .navbar-mineContainer .navbar-mine .unanimate-height {
+          height: 50px; }
+        body .content .navbar-mineContainer .navbar-mine .slide-button {
+          position: absolute;
+          right: 10px;
+          top: 0;
+          z-index: 1001;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+          background: white;
+          width: 30px;
+          height: 30px;
+          cursor: pointer; }
+          body .content .navbar-mineContainer .navbar-mine .slide-button span {
+            position: relative;
+            font-size: 21px;
+            left: calc(50% - 11px);
+            top: calc(50% - 11px);
+            cursor: pointer; }
+            body .content .navbar-mineContainer .navbar-mine .slide-button span:hover {
+              color: white; }
+          body .content .navbar-mineContainer .navbar-mine .slide-button:hover {
+            background: black; }
+        body .content .navbar-mineContainer .navbar-mine .branda {
+          width: 600px;
+          height: 40px;
+          font-size: 20px;
+          color: white;
+          font-weight: bold;
+          font-family: 'Monoton', cursive;
+          padding: 0;
+          margin: 0;
+          letter-spacing: 15px;
+          position: absolute;
+          text-align: center;
+          left: calc(50% - 300px);
+          top: 0; }
+        body .content .navbar-mineContainer .navbar-mine .logo {
+          position: absolute;
+          left: 20px;
+          display: none; }
+          @media screen and (max-width: 400px) {
+            body .content .navbar-mineContainer .navbar-mine .logo {
+              display: none !important; } }
+          @media screen and (min-width: 400px) and (max-width: 768px) {
+            body .content .navbar-mineContainer .navbar-mine .logo {
+              display: none !important; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body .content .navbar-mineContainer .navbar-mine .logo {
+              display: none !important; } }
+          @media screen and (min-width: 992px) and (max-width: 1100px) {
+            body .content .navbar-mineContainer .navbar-mine .logo {
+              display: none !important; } }
+          @media screen and (min-width: 1100px) and (max-width: 1200px) {
+            body .content .navbar-mineContainer .navbar-mine .logo {
+              display: none !important; } }
+          @media screen and (min-width: 1200px) {
+            body .content .navbar-mineContainer .navbar-mine .logo {
+              padding: 0 0; } }
+        body .content .navbar-mineContainer .navbar-mine .nav-links {
+          font-family: 'Audiowide', cursive;
+          margin-top: 30px;
+          display: none; }
+        body .content .navbar-mineContainer .navbar-mine ul li {
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          border-radius: 20px;
+          border: 3px solid white; }
+          body .content .navbar-mineContainer .navbar-mine ul li a {
+            color: white;
+            text-transform: none; }
+            @media screen and (max-width: 400px) {
+              body .content .navbar-mineContainer .navbar-mine ul li a {
+                letter-spacing: 1px; } }
+            @media screen and (min-width: 400px) and (max-width: 768px) {
+              body .content .navbar-mineContainer .navbar-mine ul li a {
+                letter-spacing: 2px; } }
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+              body .content .navbar-mineContainer .navbar-mine ul li a {
+                letter-spacing: 3px; } }
+            @media screen and (min-width: 992px) and (max-width: 1100px) {
+              body .content .navbar-mineContainer .navbar-mine ul li a {
+                letter-spacing: 4px; } }
+            @media screen and (min-width: 1100px) and (max-width: 1200px) {
+              body .content .navbar-mineContainer .navbar-mine ul li a {
+                letter-spacing: 5px; } }
+            @media screen and (min-width: 1200px) {
+              body .content .navbar-mineContainer .navbar-mine ul li a {
+                letter-spacing: 6px; } }
+            body .content .navbar-mineContainer .navbar-mine ul li a:hover {
+              border-radius: 30px;
+              background: rgba(250, 250, 250, 0.3); }
+            body .content .navbar-mineContainer .navbar-mine ul li a:active {
+              border-radius: 30px;
+              background: rgba(250, 250, 250, 0.3); }
+    body .content .main-content {
+      margin: 20px;
+      padding: 20px;
+      background: white;
+      z-index: 500;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px; }
+      @media screen and (max-width: 400px) {
+        body .content .main-content {
+          margin: 0 10px; } }
+      @media screen and (min-width: 400px) and (max-width: 768px) {
+        body .content .main-content {
+          margin: 0 30px; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .content .main-content {
+          margin: 0 70px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body .content .main-content {
+          margin: 0 50px; } }
+      @media screen and (min-width: 1200px) {
+        body .content .main-content {
+          margin: 0 120px; } }
+      body .content .main-content .creator .heading-td {
+        background: #464646;
+        color: white; }
+      body .content .main-content .creator #btn_prepare {
+        display: none; }
+      body .content .main-content .creator .btns-grup {
+        padding: 20px; }
+      body .content .main-content .creator .table-view .myAddButton {
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        background: red;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 5px 10px; }
+        body .content .main-content .creator .table-view .myAddButton:hover {
+          background: black;
+          cursor: pointer;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -ms-transition: all 1s;
+          -o-transition: all 1s;
+          transition: all 1s; }
+      body .content .main-content .meals {
+        padding: 40px;
+        background: rgba(250, 250, 250, 0.7);
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px; }
+        @media screen and (max-width: 400px) {
+          body .content .main-content .meals {
+            margin: 0 10px; } }
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+          body .content .main-content .meals {
+            margin: 0 30px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .main-content .meals {
+            margin: 0 70px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body .content .main-content .meals {
+            margin: 0 50px; } }
+        @media screen and (min-width: 1200px) {
+          body .content .main-content .meals {
+            margin: 0 120px; } }
+        body .content .main-content .meals .meal_panel {
+          margin-bottom: 10px;
+          padding: 20px;
+          border: 3px solid black;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          background: rgba(250, 250, 250, 0.7); }
+          body .content .main-content .meals .meal_panel .meal_panel_heading {
+            text-align: center;
+            border: 4px double rgba(100, 90, 130, 0.6);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px; }
+          body .content .main-content .meals .meal_panel .meal_panel_body {
+            padding: 20px;
+            background: rgba(200, 180, 10, 0.9);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px; }
+      body .content .main-content .product_base {
+        background: rgba(250, 250, 250, 0.7);
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px; }
+        @media screen and (max-width: 400px) {
+          body .content .main-content .product_base {
+            margin: 0 10px; } }
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+          body .content .main-content .product_base {
+            margin: 0 30px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .main-content .product_base {
+            margin: 0 70px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body .content .main-content .product_base {
+            margin: 0 50px; } }
+        @media screen and (min-width: 1200px) {
+          body .content .main-content .product_base {
+            margin: 0 120px; } }
+    body .content .footerContainer {
+      padding: 0; }
+      body .content .footerContainer .footer {
+        position: fixed;
+        bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        height: 50px;
+        background: rgba(100, 100, 100, 0.8); }
+        body .content .footerContainer .footer .copyright {
+          font-size: 15px;
+          color: white;
+          font-weight: bold;
+          font-family: 'Monoton', cursive;
+          padding: 0;
+          margin: 0;
+          letter-spacing: 10px; }
+        @media screen and (max-width: 400px) {
+          body .content .footerContainer .footer {
+            margin: 0 10px;
+            width: calc(100% - 20px); } }
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+          body .content .footerContainer .footer {
+            margin: 0 30px;
+            width: calc(100% - 60px); } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .footerContainer .footer {
+            margin: 0 70px;
+            width: calc(100% - 140px); } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body .content .footerContainer .footer {
+            margin: 0 50px;
+            width: calc(100% - 100px); } }
+        @media screen and (min-width: 1200px) {
+          body .content .footerContainer .footer {
+            margin: 0 120px;
+            width: calc(100% - 240px); } }
+    body .content .error {
+      color: red;
+      font-size: 25px; }
+
+.animate-arrow {
+  transform: rotate(180deg);
+  transition: all 2s; }
+
+.unanimate-arrow {
+  transform: rotate(0);
+  transition: all 2s; }
+
+table thead tr td {
+  background: rgba(100, 100, 100, 0.8);
+  color: white; }
+
+table tr td {
+  font-family: 'Audiowide', cursive; }
