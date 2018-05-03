@@ -10,7 +10,6 @@ class ProductBase extends React.Component{
     constructor(props){
         super(props);
     }
-
     render(){
         return(
             <div className="col-md-12 text-center">

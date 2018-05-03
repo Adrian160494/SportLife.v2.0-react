@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Monoton");
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
 body {
   width: 100%;
   height: 100%;
@@ -34,8 +35,9 @@ body {
       top: 0; }
       body .content .navbar-mineContainer .navbar-mine {
         z-index: 1001;
-        height: 50px;
         background: rgba(100, 100, 100, 0.5);
+        box-shadow: 0 3px 20px 4px black;
+        height: 50px;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         border-top-left-radius: 0;
@@ -43,13 +45,16 @@ body {
         padding: 10px; }
         @media screen and (max-width: 400px) {
           body .content .navbar-mineContainer .navbar-mine {
-            margin: 0 10px; } }
+            margin: 0 0;
+            height: 50px !important; } }
         @media screen and (min-width: 400px) and (max-width: 768px) {
           body .content .navbar-mineContainer .navbar-mine {
-            margin: 0 30px; } }
+            margin: 0 10px;
+            height: 50px !important; } }
         @media screen and (min-width: 768px) and (max-width: 992px) {
           body .content .navbar-mineContainer .navbar-mine {
-            margin: 0 70px; } }
+            margin: 0 70px;
+            height: 50px !important; } }
         @media screen and (min-width: 992px) and (max-width: 1200px) {
           body .content .navbar-mineContainer .navbar-mine {
             margin: 0 50px; } }
@@ -65,23 +70,24 @@ body {
           right: 10px;
           top: 0;
           z-index: 1001;
-          -webkit-border-radius: 100px;
-          -moz-border-radius: 100px;
-          border-radius: 100px;
-          background: white;
           width: 30px;
+          color: white;
           height: 30px;
           cursor: pointer; }
+          @media screen and (max-width: 400px) {
+            body .content .navbar-mineContainer .navbar-mine .slide-button {
+              display: none; } }
+          @media screen and (min-width: 400px) and (max-width: 992px) {
+            body .content .navbar-mineContainer .navbar-mine .slide-button {
+              display: none; } }
           body .content .navbar-mineContainer .navbar-mine .slide-button span {
             position: relative;
-            font-size: 21px;
-            left: calc(50% - 11px);
-            top: calc(50% - 11px);
+            font-size: 30px;
+            left: calc(50% - 10px);
+            top: calc(50% - 23px);
             cursor: pointer; }
             body .content .navbar-mineContainer .navbar-mine .slide-button span:hover {
-              color: white; }
-          body .content .navbar-mineContainer .navbar-mine .slide-button:hover {
-            background: black; }
+              color: black; }
         body .content .navbar-mineContainer .navbar-mine .branda {
           width: 600px;
           height: 40px;
@@ -96,10 +102,30 @@ body {
           text-align: center;
           left: calc(50% - 300px);
           top: 0; }
+          @media screen and (max-width: 400px) {
+            body .content .navbar-mineContainer .navbar-mine .branda {
+              font-size: 11px;
+              display: block !important; } }
+          @media screen and (min-width: 400px) and (max-width: 768px) {
+            body .content .navbar-mineContainer .navbar-mine .branda {
+              font-size: 14px;
+              display: block !important; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body .content .navbar-mineContainer .navbar-mine .branda {
+              font-size: 20px;
+              display: block !important; } }
+          @media screen and (min-width: 992px) and (max-width: 1100px) {
+            body .content .navbar-mineContainer .navbar-mine .branda {
+              font-size: 20px; } }
+          @media screen and (min-width: 1100px) and (max-width: 1200px) {
+            body .content .navbar-mineContainer .navbar-mine .branda {
+              font-size: 20px; } }
+          @media screen and (min-width: 1200px) {
+            body .content .navbar-mineContainer .navbar-mine .branda {
+              font-size: 20px; } }
         body .content .navbar-mineContainer .navbar-mine .logo {
           position: absolute;
-          left: 20px;
-          display: none; }
+          left: 20px; }
           @media screen and (max-width: 400px) {
             body .content .navbar-mineContainer .navbar-mine .logo {
               display: none !important; } }
@@ -112,16 +138,27 @@ body {
           @media screen and (min-width: 992px) and (max-width: 1100px) {
             body .content .navbar-mineContainer .navbar-mine .logo {
               display: none !important; } }
-          @media screen and (min-width: 1100px) and (max-width: 1200px) {
+          @media screen and (min-width: 1100px) and (max-width: 1300px) {
             body .content .navbar-mineContainer .navbar-mine .logo {
-              display: none !important; } }
-          @media screen and (min-width: 1200px) {
+              display: none !important;
+              text-align: center; } }
+          @media screen and (min-width: 1300px) {
             body .content .navbar-mineContainer .navbar-mine .logo {
-              padding: 0 0; } }
+              padding: 0 0;
+              display: none; } }
         body .content .navbar-mineContainer .navbar-mine .nav-links {
           font-family: 'Audiowide', cursive;
-          margin-top: 30px;
+          margin-top: 25px;
           display: none; }
+        @media screen and (max-width: 400px) {
+          body .content .navbar-mineContainer .navbar-mine ul {
+            display: none !important; } }
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+          body .content .navbar-mineContainer .navbar-mine ul {
+            display: none !important; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .navbar-mineContainer .navbar-mine ul {
+            display: none !important; } }
         body .content .navbar-mineContainer .navbar-mine ul li {
           -webkit-border-radius: 20px;
           -moz-border-radius: 20px;
@@ -154,8 +191,83 @@ body {
             body .content .navbar-mineContainer .navbar-mine ul li a:active {
               border-radius: 30px;
               background: rgba(250, 250, 250, 0.3); }
+      body .content .navbar-mineContainer .menuButton {
+        position: absolute;
+        z-index: 1003;
+        font-size: 30px;
+        color: white;
+        right: 10px;
+        top: 10px;
+        cursor: pointer; }
+        @media screen and (max-width: 400px) {
+          body .content .navbar-mineContainer .menuButton {
+            display: block; } }
+        @media screen and (min-width: 400px) and (max-width: 992px) {
+          body .content .navbar-mineContainer .menuButton {
+            display: block; } }
+        @media screen and (min-width: 992px) {
+          body .content .navbar-mineContainer .menuButton {
+            display: none; } }
+      body .content .navbar-mineContainer .navigation-mobile {
+        position: fixed;
+        z-index: 1002;
+        background: rgba(10, 10, 10, 0.99);
+        top: 0;
+        width: 100%;
+        height: 100%; }
+        @media screen and (max-width: 400px) {
+          body .content .navbar-mineContainer .navigation-mobile {
+            display: none; } }
+        @media screen and (min-width: 400px) and (max-width: 992px) {
+          body .content .navbar-mineContainer .navigation-mobile {
+            display: none; } }
+        @media screen and (min-width: 992px) {
+          body .content .navbar-mineContainer .navigation-mobile {
+            display: none; } }
+        body .content .navbar-mineContainer .navigation-mobile .branda2 {
+          position: relative;
+          top: 30px;
+          height: 40px;
+          color: white;
+          font-weight: bold;
+          font-family: 'Monoton', cursive;
+          padding: 0;
+          margin: 0;
+          letter-spacing: 15px;
+          text-align: center; }
+          @media screen and (max-width: 400px) {
+            body .content .navbar-mineContainer .navigation-mobile .branda2 {
+              font-size: 15px; } }
+          @media screen and (min-width: 400px) and (max-width: 768px) {
+            body .content .navbar-mineContainer .navigation-mobile .branda2 {
+              font-size: 20px; } }
+          @media screen and (min-width: 768px) {
+            body .content .navbar-mineContainer .navigation-mobile .branda2 {
+              font-size: 30px; } }
+        body .content .navbar-mineContainer .navigation-mobile .nav-links2 {
+          position: fixed;
+          width: 100%;
+          padding: 50px;
+          top: 30%;
+          letter-spacing: 10px; }
+        body .content .navbar-mineContainer .navigation-mobile ul li {
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          border-radius: 20px;
+          border: 3px solid white; }
+          body .content .navbar-mineContainer .navigation-mobile ul li a {
+            color: white; }
+            body .content .navbar-mineContainer .navigation-mobile ul li a:hover {
+              border-radius: 30px;
+              background: rgba(250, 250, 250, 0.3); }
+            body .content .navbar-mineContainer .navigation-mobile ul li a:active {
+              border-radius: 30px;
+              background: rgba(250, 250, 250, 0.3); }
+        body .content .navbar-mineContainer .navigation-mobile .logo2 {
+          position: fixed;
+          bottom: 10px;
+          left: calc(50% - 150px); }
     body .content .main-content {
-      margin: 20px;
       padding: 20px;
       background: white;
       z-index: 500;
@@ -165,10 +277,10 @@ body {
       border-bottom-left-radius: 30px; }
       @media screen and (max-width: 400px) {
         body .content .main-content {
-          margin: 0 10px; } }
+          margin: 0 0; } }
       @media screen and (min-width: 400px) and (max-width: 768px) {
         body .content .main-content {
-          margin: 0 30px; } }
+          margin: 0 10px; } }
       @media screen and (min-width: 768px) and (max-width: 992px) {
         body .content .main-content {
           margin: 0 70px; } }
@@ -178,6 +290,24 @@ body {
       @media screen and (min-width: 1200px) {
         body .content .main-content {
           margin: 0 120px; } }
+      @media screen and (max-width: 400px) {
+        body .content .main-content .creator {
+          font-size: 10px; } }
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        body .content .main-content .creator {
+          font-size: 10px; } }
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        body .content .main-content .creator {
+          font-size: 12px; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .content .main-content .creator {
+          font-size: 13px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body .content .main-content .creator {
+          font-size: 13px; } }
+      @media screen and (min-width: 1200px) {
+        body .content .main-content .creator {
+          font-size: 14px; } }
       body .content .main-content .creator .heading-td {
         background: #464646;
         color: white; }
@@ -185,15 +315,34 @@ body {
         display: none; }
       body .content .main-content .creator .btns-grup {
         padding: 20px; }
+      body .content .main-content .creator .table-view .table1, body .content .main-content .creator .table-view .table2, body .content .main-content .creator .table-view .table3 {
+        display: none; }
       body .content .main-content .creator .table-view .myAddButton {
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
         border-radius: 100px;
-        background: red;
-        color: white;
+        background: lightgreen;
+        color: black;
         cursor: pointer;
-        font-size: 20px;
         padding: 5px 10px; }
+        @media screen and (max-width: 400px) {
+          body .content .main-content .creator .table-view .myAddButton {
+            font-size: 10px; } }
+        @media screen and (min-width: 400px) and (max-width: 500px) {
+          body .content .main-content .creator .table-view .myAddButton {
+            font-size: 10px; } }
+        @media screen and (min-width: 500px) and (max-width: 768px) {
+          body .content .main-content .creator .table-view .myAddButton {
+            font-size: 12px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .main-content .creator .table-view .myAddButton {
+            font-size: 13px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body .content .main-content .creator .table-view .myAddButton {
+            font-size: 13px; } }
+        @media screen and (min-width: 1200px) {
+          body .content .main-content .creator .table-view .myAddButton {
+            font-size: 14px; } }
         body .content .main-content .creator .table-view .myAddButton:hover {
           background: black;
           cursor: pointer;
@@ -202,48 +351,85 @@ body {
           -ms-transition: all 1s;
           -o-transition: all 1s;
           transition: all 1s; }
-      body .content .main-content .meals {
-        padding: 40px;
-        background: rgba(250, 250, 250, 0.7);
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px; }
+      @media screen and (max-width: 400px) {
+        body .content .main-content .makroCreator {
+          font-size: 10px; } }
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        body .content .main-content .makroCreator {
+          font-size: 10px; } }
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        body .content .main-content .makroCreator {
+          font-size: 12px; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .content .main-content .makroCreator {
+          font-size: 13px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body .content .main-content .makroCreator {
+          font-size: 13px; } }
+      @media screen and (min-width: 1200px) {
+        body .content .main-content .makroCreator {
+          font-size: 14px; } }
+      @media screen and (max-width: 400px) {
+        body .content .main-content .makroCreator .inputMakro {
+          width: 30px; } }
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        body .content .main-content .makroCreator .inputMakro {
+          width: 40px; } }
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        body .content .main-content .makroCreator .inputMakro {
+          width: 50px; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .content .main-content .makroCreator .inputMakro {
+          width: 60px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body .content .main-content .makroCreator .inputMakro {
+          width: 70px; } }
+      @media screen and (min-width: 1200px) {
+        body .content .main-content .makroCreator .inputMakro {
+          width: 80px; } }
+      body .content .main-content .makroCreator .addButtonMakro {
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        background: red;
+        color: white;
+        cursor: pointer;
+        padding: 5px 10px; }
         @media screen and (max-width: 400px) {
-          body .content .main-content .meals {
-            margin: 0 10px; } }
-        @media screen and (min-width: 400px) and (max-width: 768px) {
-          body .content .main-content .meals {
-            margin: 0 30px; } }
+          body .content .main-content .makroCreator .addButtonMakro {
+            font-size: 10px; } }
+        @media screen and (min-width: 400px) and (max-width: 500px) {
+          body .content .main-content .makroCreator .addButtonMakro {
+            font-size: 10px; } }
+        @media screen and (min-width: 500px) and (max-width: 768px) {
+          body .content .main-content .makroCreator .addButtonMakro {
+            font-size: 12px; } }
         @media screen and (min-width: 768px) and (max-width: 992px) {
-          body .content .main-content .meals {
-            margin: 0 70px; } }
+          body .content .main-content .makroCreator .addButtonMakro {
+            font-size: 13px; } }
         @media screen and (min-width: 992px) and (max-width: 1200px) {
-          body .content .main-content .meals {
-            margin: 0 50px; } }
+          body .content .main-content .makroCreator .addButtonMakro {
+            font-size: 13px; } }
         @media screen and (min-width: 1200px) {
-          body .content .main-content .meals {
-            margin: 0 120px; } }
-        body .content .main-content .meals .meal_panel {
-          margin-bottom: 10px;
-          padding: 20px;
-          border: 3px solid black;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
-          border-bottom-left-radius: 20px;
-          background: rgba(250, 250, 250, 0.7); }
-          body .content .main-content .meals .meal_panel .meal_panel_heading {
-            text-align: center;
-            border: 4px double rgba(100, 90, 130, 0.6);
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px; }
-          body .content .main-content .meals .meal_panel .meal_panel_body {
-            padding: 20px;
-            background: rgba(200, 180, 10, 0.9);
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px; }
+          body .content .main-content .makroCreator .addButtonMakro {
+            font-size: 14px; } }
+        body .content .main-content .makroCreator .addButtonMakro:hover {
+          background: black;
+          cursor: pointer;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -ms-transition: all 1s;
+          -o-transition: all 1s;
+          transition: all 1s; }
+        body .content .main-content .makroCreator .addButtonMakro:disabled {
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+          background: rgba(10, 10, 10, 0.5);
+          color: white;
+          cursor: pointer;
+          font-size: 20px;
+          padding: 5px 10px; }
       body .content .main-content .product_base {
         background: rgba(250, 250, 250, 0.7);
         border-bottom-right-radius: 0;
@@ -252,18 +438,101 @@ body {
         border-bottom-left-radius: 30px; }
         @media screen and (max-width: 400px) {
           body .content .main-content .product_base {
-            margin: 0 10px; } }
-        @media screen and (min-width: 400px) and (max-width: 768px) {
+            font-size: 10px;
+            margin: 0 0; } }
+        @media screen and (min-width: 400px) and (max-width: 500px) {
           body .content .main-content .product_base {
-            margin: 0 30px; } }
+            font-size: 10px;
+            margin: 0 10px; } }
+        @media screen and (min-width: 500px) and (max-width: 768px) {
+          body .content .main-content .product_base {
+            font-size: 12px;
+            margin: 0 10px; } }
         @media screen and (min-width: 768px) and (max-width: 992px) {
           body .content .main-content .product_base {
+            font-size: 13px;
             margin: 0 70px; } }
         @media screen and (min-width: 992px) and (max-width: 1200px) {
           body .content .main-content .product_base {
+            font-size: 13px;
             margin: 0 50px; } }
         @media screen and (min-width: 1200px) {
           body .content .main-content .product_base {
+            font-size: 14px;
+            margin: 0 120px; } }
+      @media screen and (max-width: 400px) {
+        body .content .main-content .calculator label {
+          font-size: 11px;
+          margin: 0 0; } }
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        body .content .main-content .calculator label {
+          font-size: 11px;
+          margin: 0 10px; } }
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        body .content .main-content .calculator label {
+          font-size: 13px;
+          margin: 0 10px; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .content .main-content .calculator label {
+          font-size: 14px;
+          margin: 0 70px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body .content .main-content .calculator label {
+          font-size: 14px;
+          margin: 0 50px; } }
+      @media screen and (min-width: 1200px) {
+        body .content .main-content .calculator label {
+          font-size: 15px;
+          margin: 0 120px; } }
+      @media screen and (max-width: 400px) {
+        body .content .main-content .conclusion .well span {
+          font-size: 10px;
+          margin: 0 0; } }
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        body .content .main-content .conclusion .well span {
+          font-size: 10px;
+          margin: 0 10px; } }
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        body .content .main-content .conclusion .well span {
+          font-size: 12px;
+          margin: 0 10px; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body .content .main-content .conclusion .well span {
+          font-size: 13px;
+          margin: 0 70px; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body .content .main-content .conclusion .well span {
+          font-size: 13px;
+          margin: 0 50px; } }
+      @media screen and (min-width: 1200px) {
+        body .content .main-content .conclusion .well span {
+          font-size: 14px;
+          margin: 0 120px; } }
+      body .content .main-content .conclusion label {
+        text-align: left; }
+        @media screen and (max-width: 400px) {
+          body .content .main-content .conclusion label {
+            font-size: 11px;
+            margin: 0 0; } }
+        @media screen and (min-width: 400px) and (max-width: 500px) {
+          body .content .main-content .conclusion label {
+            font-size: 11px;
+            margin: 0 10px; } }
+        @media screen and (min-width: 500px) and (max-width: 768px) {
+          body .content .main-content .conclusion label {
+            font-size: 13px;
+            margin: 0 10px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body .content .main-content .conclusion label {
+            font-size: 14px;
+            margin: 0 70px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body .content .main-content .conclusion label {
+            font-size: 14px;
+            margin: 0 50px; } }
+        @media screen and (min-width: 1200px) {
+          body .content .main-content .conclusion label {
+            font-size: 15px;
             margin: 0 120px; } }
     body .content .footerContainer {
       padding: 0; }
@@ -271,27 +540,45 @@ body {
         position: fixed;
         bottom: 0;
         border-bottom-left-radius: 0;
+        box-shadow: 0 -5px 20px 4px black;
         border-bottom-right-radius: 0;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         height: 50px;
-        background: rgba(100, 100, 100, 0.8); }
+        background: rgba(100, 100, 100, 0.7); }
         body .content .footerContainer .footer .copyright {
-          font-size: 15px;
+          margin-top: 10px;
           color: white;
           font-weight: bold;
           font-family: 'Monoton', cursive;
           padding: 0;
-          margin: 0;
           letter-spacing: 10px; }
+          @media screen and (max-width: 400px) {
+            body .content .footerContainer .footer .copyright {
+              font-size: 11px; } }
+          @media screen and (min-width: 400px) and (max-width: 768px) {
+            body .content .footerContainer .footer .copyright {
+              font-size: 13px; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body .content .footerContainer .footer .copyright {
+              font-size: 17px; } }
+          @media screen and (min-width: 992px) and (max-width: 1100px) {
+            body .content .footerContainer .footer .copyright {
+              font-size: 20px; } }
+          @media screen and (min-width: 1100px) and (max-width: 1200px) {
+            body .content .footerContainer .footer .copyright {
+              font-size: 20px; } }
+          @media screen and (min-width: 1200px) {
+            body .content .footerContainer .footer .copyright {
+              font-size: 20px; } }
         @media screen and (max-width: 400px) {
+          body .content .footerContainer .footer {
+            margin: 0 0;
+            width: 100%; } }
+        @media screen and (min-width: 400px) and (max-width: 768px) {
           body .content .footerContainer .footer {
             margin: 0 10px;
             width: calc(100% - 20px); } }
-        @media screen and (min-width: 400px) and (max-width: 768px) {
-          body .content .footerContainer .footer {
-            margin: 0 30px;
-            width: calc(100% - 60px); } }
         @media screen and (min-width: 768px) and (max-width: 992px) {
           body .content .footerContainer .footer {
             margin: 0 70px;
@@ -322,3 +609,99 @@ table thead tr td {
 
 table tr td {
   font-family: 'Audiowide', cursive; }
+
+.rotate {
+  transform: rotate(45deg);
+  transition: all 1s; }
+
+.unrotate {
+  transform: rotate(0deg); }
+
+.tab-heading {
+  font-family: 'Audiowide', cursive; }
+  @media screen and (max-width: 400px) {
+    .tab-heading {
+      font-size: 15px; } }
+  @media screen and (min-width: 400px) and (max-width: 500px) {
+    .tab-heading {
+      font-size: 15px; } }
+  @media screen and (min-width: 500px) and (max-width: 768px) {
+    .tab-heading {
+      font-size: 19px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .tab-heading {
+      font-size: 22px; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .tab-heading {
+      font-size: 27px; } }
+  @media screen and (min-width: 1200px) {
+    .tab-heading {
+      font-size: 30px; } }
+
+.errorCode {
+  color: red; }
+
+.success {
+  color: green; }
+
+@media screen and (max-width: 400px) {
+  .removeProteinButton, .removeCarbonButton, .removeFatButton {
+    font-size: 10px; } }
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .removeProteinButton, .removeCarbonButton, .removeFatButton {
+    font-size: 10px; } }
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .removeProteinButton, .removeCarbonButton, .removeFatButton {
+    font-size: 12px; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .removeProteinButton, .removeCarbonButton, .removeFatButton {
+    font-size: 13px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .removeProteinButton, .removeCarbonButton, .removeFatButton {
+    font-size: 13px; } }
+
+@media screen and (min-width: 1200px) {
+  .removeProteinButton, .removeCarbonButton, .removeFatButton {
+    font-size: 14px; } }
+
+.meals {
+  background: rgba(250, 250, 100, 0.6);
+  font-family: 'Russo One', sans-serif; }
+  @media screen and (max-width: 400px) {
+    .meals {
+      margin: 0 0; } }
+  @media screen and (min-width: 400px) and (max-width: 768px) {
+    .meals {
+      margin: 0 10px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .meals {
+      margin: 0 70px; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .meals {
+      margin: 0 50px; } }
+  @media screen and (min-width: 1200px) {
+    .meals {
+      margin: 0 120px; } }
+  .meals .meal_panel {
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 0 30px 5px gray;
+    background: rgba(250, 250, 250, 0.7); }
+    .meals .meal_panel .meal_panel_heading {
+      text-align: center; }
+    .meals .meal_panel .meal_panel_body {
+      padding: 40px;
+      background: rgba(10, 10, 10, 0.6);
+      box-shadow: 0 0 14px 10px rgba(10, 10, 10, 0.6); }
+      .meals .meal_panel .meal_panel_body p {
+        color: white; }
+
+#previusButton {
+  display: none; }
+
+.calculateDiv {
+  width: 100%; }

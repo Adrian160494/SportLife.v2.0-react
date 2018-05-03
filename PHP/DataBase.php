@@ -11,10 +11,10 @@ class DataBase {
     public $_host,$_user, $_password, $_db_name, $_db_connection;
 
     function __construct(){
-        $this->_host = 'localhost';
-        $this->_user = 'root';
-        $this->_password = '';
-        $this->_db_name = 'sport';
+        $this->_host = 'sql.5v.pl';
+        $this->_user = 'db-user36366';
+        $this->_password = 'a8kwuupzfludezuo';
+        $this->_db_name = 'db-user36366';
         $this->_db_connection = new mysqli($this->_host,$this->_user, $this->_password, $this->_db_name);
     }
 

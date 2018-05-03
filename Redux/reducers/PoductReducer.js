@@ -2,7 +2,7 @@
  * Created by Adrian on 15.03.2018.
  */
 
-export const ProductReducer = (state={protein: [],carbon: [], fat: []},action)=>{
+export const ProductReducer = (state={protein: [],carbon: [], fat: [], makro: {protein: '',carbon:'',fat:''}},action)=>{
     switch(action.type) {
         case "ADD_PROTEIN":
             console.log('Dodalem protein');
